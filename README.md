@@ -21,6 +21,8 @@
  * To run the project in localhost:
    > `python manage.py runserver`
   Open http://127.0.0.1:8000/admin/
+
+  
    SUPER USER
    ID: rinkon
    Password: 2017331034

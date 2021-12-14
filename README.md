@@ -3,19 +3,21 @@
 ### How to work:
  * Clone the project
  * Create Virtual Environment
- >  `virtualenv env`
+   >  `virtualenv env`
  * Active Virtual Environment
- >  `source env/bin/activate`
+   >  `source env/bin/activate`
  * Open command line in project base dir and install all dependency
    > `pip install -r requirements.txt`
 
  * Go do Directory Where manage.py is
    > `cd webtest`
+ * Install Django-filter
+   > `pip install django-filter`
  * To migrations the model:
-  > `python manage.py makemigrations`
+   > `python manage.py makemigrations`
  
  * To migrate the models to Database: 
-  > `python manage.py migrate` 
+   > `python manage.py migrate` 
  * To run the project in localhost:
    > `python manage.py runserver`
   Open http://127.0.0.1:8000/admin/

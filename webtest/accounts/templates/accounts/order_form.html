@@ -1,0 +1,29 @@
+{%  extends 'accounts/main.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="card card-body">
+
+			<h3>Place Your Order Here:</h3>
+
+			<form action="" method="POST">
+				{% csrf_token %}
+				{{ form.management_form }}
+				{% for field in form %}
+				  <hr>
+					{{field}}
+					<hr>
+				{% endfor %}
+
+				<input type="submit" name="Submit">
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
